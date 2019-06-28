@@ -64,6 +64,7 @@ int main(void)
             lcdFloat1(((float)((uint32_t)(umidade*1000)%1000))*0.01, 1);
             lcdWriteByte('%', 1);
             lcdWriteByte(' ', 1);
+            count++;
         }
         ADC12CTL0 |= ADC12ENC;
     }
@@ -92,7 +93,7 @@ __interrupt void ADC12_ISR() {
     media += ADC12MEM13;
     media += ADC12MEM14;
     media += ADC12MEM15;
-    results[count++] = (uint32_t)(media/16);
+    results[count] = (uint32_t)(media/16);
     if(count > 14) {
         media = 0;
         for(i = 0; i < 15; i++) {
