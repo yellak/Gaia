@@ -10,6 +10,6 @@ void uartSend(uint8_t byte);
 
 int uartGet(uint8_t *data);
 
-int uartSendStr(uint8_t string[]);
+int uartSendStr(char string[]);
 
 #endif

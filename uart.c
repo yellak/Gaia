@@ -51,7 +51,7 @@ int uartGet(uint8_t *data) {
     return 0;
 }
 
-int uartSendStr(uint8_t string[]) {
+int uartSendStr(char string[]) {
     uint32_t cont = 0;
     while(string[cont] != '\0') {
         uartSend(string[cont++]);
