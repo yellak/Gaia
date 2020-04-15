@@ -10,4 +10,4 @@ Felipe Lima Vaz
 Kálley Wilkerson
 
 ## Anotações
-A documentação do projeto está no arquivo "Relatório.pdf"
+A documentação do projeto está no arquivo [Relatório.pdf](https://github.com/yellak/Gaia/blob/master/Relatório.pdf) dentro deste projeto.
